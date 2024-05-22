@@ -1,0 +1,11 @@
+:root {
+  color-scheme: dark light;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+}
