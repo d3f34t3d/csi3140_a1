@@ -36,3 +36,8 @@ h2 {
   padding: 1em;
   border-style: solid;
 }
+
+.experience-img img {
+  width: 10rem;
+  height: 10rem;
+}
