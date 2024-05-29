@@ -41,3 +41,9 @@ h2 {
   width: 10rem;
   height: 10rem;
 }
+
+.button {
+  padding: 1em;
+  margin: 1em;
+  border-style: solid;
+}
