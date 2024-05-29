@@ -1,59 +1,217 @@
-:root {
-  color-scheme: dark light;
-}
-
-* {
-  margin: 0;
-}
-
+/* General Styles */
 body {
-  line-height: 1.5;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 2em;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #121212;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
 }
 
-h2 {
-  padding: 1em 0 0 1em;
+a {
+  text-decoration: none;
+  color: #bb86fc;
+  transition: color 0.3s; /* Transition property grouping */
 }
 
-.about {
-  padding: 1em;
+a:hover {
+  color: #a55de7;
 }
 
-.items {
-  display: grid;
+.main {
+  max-width: 1000px;
+  margin: 20px auto;
+  background: #1e1e1e;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  transition: transform 0.3s; /* Transition property grouping */
 }
 
-.items li {
-  display: inline;
-  float: left;
-  padding: 0 1rem 0 1rem;
+.main:hover {
+  transform: scale(1.01);
 }
 
-.experience-container {
-  margin: 1em 0 0 0;
-  padding: 1em;
-  border-style: solid;
+/* Header Styles */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.experience-img img {
-  width: 10rem;
-  height: 10rem;
+.header h1 {
+  margin: 0;
+  color: #bb86fc;
 }
 
-.project-container {
-  margin: 1em 0 0 0;
-  padding: 1em;
-  border-style: solid;
+.header h3 {
+  margin-top: 5px;
+  color: #a0a0a0;
+}
+
+/* About Section Styles */
+.about p {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.about .items {
+  list-style-type: none;
+  padding: 0;
+}
+
+.about .items li {
+  background: #292929;
+  padding: 10px;
+  margin: 5px 0;
+  border-left: 5px solid #bb86fc;
+  border-radius: 4px;
+}
+
+/* Button Styles */
+.button {
+  background: #bb86fc;
+  color: #121212;
+  text-align: center;
+  padding: 10px 20px; /* Adjusted padding */
+  margin: 20px auto; /* Centered horizontally */
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+  display: block; /* Changed to block to center */
+  width: auto; /* Adjusted width */
+}
+
+.button:hover {
+  background: #a55de7;
+  transform: scale(1.05);
+}
+
+/* Projects Section Styles */
+.projects {
+  margin-top: 40px;
+}
+
+.projects h2 {
+  color: #bb86fc;
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Project Styles */
+.project {
+  background: #292929;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s; /* Transition property grouping */
+}
+
+.project:hover {
+  transform: scale(1.02);
+}
+
+.project-header {
+  text-align: center;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.project-header h3 {
+  margin: 5px 0;
+  color: #bb86fc;
+}
+
+.project-header h4 {
+  margin: 5px 0;
+  color: #a0a0a0;
+}
+
+.project-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.project-desc {
+  text-align: justify;
+  margin-bottom: 20px;
 }
 
 .project-img img {
-
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #333;
 }
 
-.button {
-  padding: 1em;
-  margin: 1em;
-  border-style: solid;
+@media (min-width: 600px) {
+  .project-body {
+    flex-direction: row;
+    text-align: left;
+  }
+  .project-desc {
+    flex: 2;
+    margin-right: 20px;
+  }
+  .project-img {
+    flex: 1;
+  }
+}
+
+/* Experience Section Styles */
+.experience-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 10px;
+  background: #292929;
+  border-left: 5px solid #bb86fc;
+  border-radius: 8px;
+}
+
+.experience-header {
+  flex: 2;
+}
+
+.experience-header h3,
+.experience-header h4 {
+  margin: 5px 0;
+  color: #bb86fc;
+}
+
+.experience-desc {
+  flex: 3;
+  padding-left: 20px;
+}
+
+.experience-img {
+  flex: 1;
+  text-align: right;
+}
+
+.experience-img img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+  .experience-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .experience-desc {
+    padding-left: 0;
+  }
+  .experience-img img {
+    margin-top: 10px;
+    max-width: 50px;
+  }
 }

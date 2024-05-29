@@ -7,8 +7,8 @@
   <body>
     <div class="main">
       <div class="header">
-          <h1>Aydin Yalcinkaya</h1>
-          <h3>Student Software Developer</h3>
+        <h1>Aydin Yalcinkaya</h1>
+        <h3>Student Software Developer</h3>
       </div>
       <div class="about">
         <p>A little bit about me...</p>
@@ -16,7 +16,7 @@
           <li>3<sup>rd</sup> year Computer Science student at the University of Ottawa</li>
           <li>Interested in cybersecurity</li>
           <li>Rust developer</li>
-        <ul>
+        </ul>
       </div>
       <div>
         <a href="resume.html">
@@ -27,31 +27,33 @@
       </div>
       <div class="projects">
         <h2>Projects</h2>
-        <div class="project-container">
+        <section class="project">
           <div class="project-header">
             <h3>Hotel DBMS Android App</h3>
             <h4>CSI2132</h4>
             <h4><em>Winter 2023</em></h4>
           </div>
-          <div class="project-desc">
-            <p>For my latest project, I developed a comprehensive hotel booking and rental application designed to streamline the process for customers of five major hotel chains across North America. This Android app, leveraging SQLite for database management, allows users to view real-time room availability and book or rent rooms with ease. The app is built to handle a vast array of data points, including detailed information about hotel chains, hotels, rooms, customers, and employees.
-              <br><br>
-              The application manages extensive details for each hotel chain, such as the address of central offices, the number of hotels, and contact information including emails and phone numbers. Hotels within these chains are categorized by star ratings, and the app stores their addresses, contact details, and the number of rooms available. Each room's record includes its price, amenities, capacity, view type, extendability options, and current condition. This ensures that users can make informed decisions when booking or renting a room.
-              <br><br>
-              Customer information is meticulously managed, capturing full names, addresses, SSN/SIN, and registration dates. Employee data is also stored, detailing their roles within the hotel, and ensuring that each hotel has a designated manager. The app provides robust functionality for both pre-booking and direct room rentals. Customers can search for rooms using various criteria such as dates, capacity, area, hotel chain, category, and price. Bookings are seamlessly transformed into rentals upon check-in, managed by hotel employees, who can also handle immediate room rentals for walk-in customers.
-              <br><br>
-              Ensuring data integrity and correctness is a priority, with the implementation of necessary constraints such as primary keys, referential integrity constraints, and domain constraints. The app archives booking and renting histories, allowing for future reference even if the room data is no longer available. The user interface is designed to be user-friendly, featuring elements like drop-down lists and radio buttons for easy navigation. Forms are provided for inserting, updating, and deleting data related to customers, employees, hotels, and rooms.
-              <br><br>
-              To enhance performance, I implemented specific SQL queries and triggers for database modifications and created indexes to accelerate querying and data updates. Additionally, two SQL views were developed: one showing the number of available rooms per area and the other displaying the capacity of all rooms in a specific hotel.
-              <br><br>
-              The project included creating an ER diagram and translating it into a relational database schema, supported by comprehensive documentation. The deliverables comprised SQL scripts for database creation, constraints, queries, triggers, and indexes, alongside the complete Android application code. An installation guide and a recorded presentation demonstrating the app’s features and functionalities were also provided.
-              <br><br>
-              This project highlights my capability to design and implement a complex, database-driven application, delivering a robust solution for hotel chains to efficiently manage bookings and rentals. The focus on user experience and data integrity ensures the application is both practical and reliable for real-world use.</p>
+          <div class="project-body">
+            <div class="project-desc">
+              <p>For my latest project, I developed a comprehensive hotel booking and rental application designed to streamline the process for customers of five major hotel chains across North America. This Android app, leveraging SQLite for database management, allows users to view real-time room availability and book or rent rooms with ease. The app is built to handle a vast array of data points, including detailed information about hotel chains, hotels, rooms, customers, and employees.
+                <br><br>
+                The application manages extensive details for each hotel chain, such as the address of central offices, the number of hotels, and contact information including emails and phone numbers. Hotels within these chains are categorized by star ratings, and the app stores their addresses, contact details, and the number of rooms available. Each room's record includes its price, amenities, capacity, view type, extendability options, and current condition. This ensures that users can make informed decisions when booking or renting a room.
+                <br><br>
+                Customer information is meticulously managed, capturing full names, addresses, SSN/SIN, and registration dates. Employee data is also stored, detailing their roles within the hotel, and ensuring that each hotel has a designated manager. The app provides robust functionality for both pre-booking and direct room rentals. Customers can search for rooms using various criteria such as dates, capacity, area, hotel chain, category, and price. Bookings are seamlessly transformed into rentals upon check-in, managed by hotel employees, who can also handle immediate room rentals for walk-in customers.
+                <br><br>
+                Ensuring data integrity and correctness is a priority, with the implementation of necessary constraints such as primary keys, referential integrity constraints, and domain constraints. The app archives booking and renting histories, allowing for future reference even if the room data is no longer available. The user interface is designed to be user-friendly, featuring elements like drop-down lists and radio buttons for easy navigation. Forms are provided for inserting, updating, and deleting data related to customers, employees, hotels, and rooms.
+                <br><br>
+                To enhance performance, I implemented specific SQL queries and triggers for database modifications and created indexes to accelerate querying and data updates. Additionally, two SQL views were developed: one showing the number of available rooms per area and the other displaying the capacity of all rooms in a specific hotel.
+                <br><br>
+                The project included creating an ER diagram and translating it into a relational database schema, supported by comprehensive documentation. The deliverables comprised SQL scripts for database creation, constraints, queries, triggers, and indexes, alongside the complete Android application code. An installation guide and a recorded presentation demonstrating the app’s features and functionalities were also provided.
+                <br><br>
+                This project highlights my capability to design and implement a complex, database-driven application, delivering a robust solution for hotel chains to efficiently manage bookings and rentals. The focus on user experience and data integrity ensures the application is both practical and reliable for real-world use.</p>
+            </div>
+            <div class="project-img">
+              <img src="assets/erd.png" alt="ER Diagram">
+            </div>
           </div>
-          <div class="project-img">
-            <img src="assets/erd.png">
-          </div>
-        </div>
+        </section>
       </div>
     </div>
   </body>
