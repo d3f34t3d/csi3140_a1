@@ -48,6 +48,11 @@ a:hover {
   color: #a0a0a0;
 }
 
+.project-img img {
+  max-width: 150%; /* Makes the image responsive */
+  height: auto; /* Maintains aspect ratio */
+}
+
 /* About Section Styles */
 .about p {
   font-size: 1.2em;
