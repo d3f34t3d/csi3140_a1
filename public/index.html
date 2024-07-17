@@ -66,10 +66,18 @@
                   <div class="project-desc">
                     <p>This project is a modified version of the popular word puzzle game, Wordle. This variant introduces a unique twist to the gameplay by incorporating a win streak scoring system, which enhances the player's experience by adding a competitive element. Unlike the original Wordle, this version does not require daily logins, allowing players to engage with the game on their schedule.</p>
                     <p>The game is developed using HTML, CSS, and JavaScript, ensuring a responsive and accessible interface across different devices. The core game logic, written in JavaScript, includes functions for word validation, input processing, and dynamically updating the UI based on player interactions.</p>
-                  </div>
+                    <p>This game has been refactored to leverage PHP, to accomplish the following enhancements:</p>
+        <ul>
+            <li><strong>Server-Side Game State Management:</strong> All game states, including current guesses, win streaks, and the correct word, are now managed by PHP sessions, making the game state persistent across page reloads and more secure.</li>
+            <li><strong>JSON API Integration:</strong> The game logic interacts with a JSON API, allowing the frontend to dynamically display the game state without having to manage it, thus adhering to modern web application architectures.</li>
+            <li><strong>Dynamic Leaderboard:</strong> A leaderboard feature has been added, showcasing top scores stored server-side, which updates in real time as players achieve new high scores.</li>
+            <li><strong>Enhanced Security:</strong> Input validation and session management are handled securely to prevent common security issues like SQL injection and session hijacking.</li>
+        </ul>
+        <p>These enhancements not only improve the game's functionality but also its security and scalability, making it a robust example of modern web application development.</p>
+                </div>
                   <div class="project-img">
-                      <img src="assets/mid_game.png" alt="Wordle Game Screenshot">
-                  </div>
+                    <img src="assets/game_win._php.png" alt="PHP enhanced Wordle Game Screenshot">
+                </div>
               </div>
           </section>
       </div>
