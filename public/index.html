@@ -57,23 +57,23 @@
           </section>
           <!-- Wordle Game Variant -->
           <section class="project">
-              <div class="project-header">
-                  <h3>Wordle Game Web App</h3>
-                  <h4>CSI 3140</h4>
-                  <h4><em>2024</em></h4>
-              </div>
-              <div class="project-body">
-                  <div class="project-desc">
+            <div class="project-header">
+                <h3>Wordle Game Web App</h3>
+                <h4>CSI 3140</h4>
+                <h4><em>2024</em></h4>
+            </div>
+            <div class="project-body">
+                <div class="project-desc">
                     <p>This project is a modified version of the popular word puzzle game, Wordle. This variant introduces a unique twist to the gameplay by incorporating a win streak scoring system, which enhances the player's experience by adding a competitive element. Unlike the original Wordle, this version does not require daily logins, allowing players to engage with the game on their schedule.</p>
                     <p>The game is developed using HTML, CSS, and JavaScript, ensuring a responsive and accessible interface across different devices. The core game logic, written in JavaScript, includes functions for word validation, input processing, and dynamically updating the UI based on player interactions.</p>
-                    <p>This game has been refactored to leverage PHP, to accomplish the following enhancements:</p>
-        <ul>
-            <li><strong>Server-Side Game State Management:</strong> All game states, including current guesses, win streaks, and the correct word, are now managed by PHP sessions, making the game state persistent across page reloads and more secure.</li>
-            <li><strong>JSON API Integration:</strong> The game logic interacts with a JSON API, allowing the frontend to dynamically display the game state without having to manage it, thus adhering to modern web application architectures.</li>
-            <li><strong>Dynamic Leaderboard:</strong> A leaderboard feature has been added, showcasing top scores stored server-side, which updates in real time as players achieve new high scores.</li>
-            <li><strong>Enhanced Security:</strong> Input validation and session management are handled securely to prevent common security issues like SQL injection and session hijacking.</li>
-        </ul>
-        <p>These enhancements not only improve the game's functionality but also its security and scalability, making it a robust example of modern web application development.</p>
+                    <p>This game has been further enhanced by integrating a PHP backend with a new SQL database, leading to significant improvements:</p>
+                    <ul>
+                        <li><strong>Database-Driven State Management:</strong> Transitioned from PHP sessions to a SQL database for managing game states, player data, and win streaks, which provides better persistence and scalability.</li>
+                        <li><strong>SQL Database for Leaderboards:</strong> Replaced the session-based leaderboard with a database-backed leaderboard, allowing for more robust data management and the ability to maintain records over a longer term.</li>
+                        <li><strong>Enhanced Security and Data Integrity:</strong> Utilizes prepared statements in PHP to interact with the database, safeguarding against SQL injection attacks and ensuring data integrity.</li>
+                        <li><strong>JSON API Integration:</strong> Continues to utilize a JSON API for frontend-backend interaction, with improvements in API responses due to robust backend processing powered by the SQL database.</li>
+                    </ul>
+                    <p>These upgrades not only enhance the functionality and user experience of the game but also bolster its security and operational efficiency, making it an exemplary modern web application project.</p>
                 </div>
                   <div class="project-img">
                     <img src="assets/game_win._php.png" alt="PHP enhanced Wordle Game Screenshot">
